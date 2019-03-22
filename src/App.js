@@ -65,8 +65,10 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-10 mx-auto col-md-8">
+            <h3 className="text-center">
+              Welcome, to my Todo App
+            </h3>
             <h3 className="text-capitalize text-center">
-            Hello
               <TodoInput 
               item={this.state.item}
               handleChange={this.handleChange}
@@ -78,7 +80,7 @@ class App extends Component {
               <TodoList items={this.state.items} clearList={this.clearList}
                 handleDelete={this.handleDelete} handleEdit={this.handleEdit}
               />
-              
+              <a href="https://my-react-todo-project.netlify.com/" className="text-capitalize text-center"> View in production </a>
             </div>
           </div>
         </div>
